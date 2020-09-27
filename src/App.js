@@ -1,11 +1,20 @@
 import React from "react";
 import "./style.css";
 
-export default function App() {
+function Header ({title}) {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
-  );
+    <h1 style={{textAlign:"center"}}>{title}</h1>
+  )
+};
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header title={"todo-l"}/>
+        <p></p>
+      </div>
+    );
+  }
 }
+export default App;
