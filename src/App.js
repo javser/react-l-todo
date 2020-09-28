@@ -1,20 +1,17 @@
 import React from "react";
 import "./style.css";
 
-function Header ({title}) {
-  return (
-    <h1 style={{textAlign:"center"}}>{title}</h1>
-  )
-};
+import Header from "./components/Header";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Header title={"todo-l"}/>
+        <Header title={"todo-l-app"}/>
         <p></p>
       </div>
     );
   }
 }
+
 export default App;
