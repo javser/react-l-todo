@@ -1,14 +1,13 @@
-import React from "react";
+import React,{Component} from "react";
 import "./style.css";
 
 import Header from "./components/Header";
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div>
-        <Header title={"todo-l-app"}/>
-        <p></p>
+        <Header title={"todo-l-app"} />
       </div>
     );
   }
