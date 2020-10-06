@@ -9,14 +9,17 @@ function List ({items}) {
 }
 
 function Add ({onSubmit}) {
+  const [fi,setfi]=React.useState('');
   return (
     <form action='' onSubmit={(e)=>{
       onSubmit(e.target.newItem.value); 
       e.preventDefault();
+      setfi(e.target.newItem.value)
       }
     }>
       <input type='text' name='newItem' />
       <input type='submit' value='add' />
+      <span>{fi}</span>
     </form>
   );
 }
